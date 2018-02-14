@@ -9,13 +9,13 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
  
 # Authentication
-s.login("usha.17ec@cmr.edu.in", "ushashiri")
+s.login("usha.17ec@cmr.edu.in", "password")
  
 # message to be sent
 message = "hello"
  
 # sending the mail
-s.sendmail("ushashiri197@gmail.com", message)
+s.sendmail("ushashiri197@gmail.com","usha.17ec@cmr.edu.in",message)
  
 # terminating the session
 s.quit()
